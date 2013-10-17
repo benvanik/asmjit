@@ -55,11 +55,11 @@
 // ============================================================================
 
 // Turn debug on/off (to bypass autodetection)
-// #define ASMJIT_DEBUG
+#define ASMJIT_DEBUG
 // #define ASMJIT_NO_DEBUG
 
 // Setup custom assertion code.
-// #define ASMJIT_ASSERT(exp) do { if (!(exp)) ::AsmJit::assertionFailure(__FILE__, __LINE__, #exp); } while(0)
+#define ASMJIT_ASSERT(exp) do { if (!(exp)) ::AsmJit::assertionFailure(__FILE__, __LINE__, #exp); } while(0)
 
 // [Guard]
 #endif // _ASMJIT_CONFIG_H

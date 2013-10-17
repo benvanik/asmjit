@@ -4057,17 +4057,17 @@ struct X86Compiler : public Compiler
 
   //! @brief Packed SP-FP Square Root Reciprocal (SSE).
   inline void rsqrtps(const XmmVar& dst, const XmmVar& src)
-  { _emitInstruction(kX86InstSqrtPS, &dst, &src); }
+  { _emitInstruction(kX86InstRSqrtPS, &dst, &src); }
   //! @brief Packed SP-FP Square Root Reciprocal (SSE).
   inline void rsqrtps(const XmmVar& dst, const Mem& src)
-  { _emitInstruction(kX86InstSqrtPS, &dst, &src); }
+  { _emitInstruction(kX86InstRSqrtPS, &dst, &src); }
 
   //! @brief Scalar SP-FP Square Root Reciprocal (SSE).
   inline void rsqrtss(const XmmVar& dst, const XmmVar& src)
-  { _emitInstruction(kX86InstSqrtSS, &dst, &src); }
+  { _emitInstruction(kX86InstRSqrtSS, &dst, &src); }
   //! @brief Scalar SP-FP Square Root Reciprocal (SSE).
   inline void rsqrtss(const XmmVar& dst, const Mem& src)
-  { _emitInstruction(kX86InstSqrtSS, &dst, &src); }
+  { _emitInstruction(kX86InstRSqrtSS, &dst, &src); }
 
   //! @brief Store fence (SSE).
   inline void sfence()

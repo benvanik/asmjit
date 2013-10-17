@@ -114,7 +114,7 @@ CompilerItem* X86CompilerTarget::translate(CompilerContext& cc)
     return NULL;
   }
 
-  if (x86Context._isUnreachable)
+  if (0)//x86Context._isUnreachable)
   {
     // If the context has "isUnreachable" flag set and there is no state then
     // it means that this code will be never called. This is a problem, because
